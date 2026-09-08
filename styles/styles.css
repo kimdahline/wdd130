@@ -1,0 +1,42 @@
+nav {
+    background-color: darkblue;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    display:block;
+    padding:20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+img { 
+    width:150px;
+    height:auto;
+    border:1px solid black;
+    padding:2px;
+    box-shadow: 0 0 30px gray;
+
+}
+
+    p {
+    font-family: Arial, Helvetica, sans-serif; /* clean readable font */
+    font-size: 16px;                          /* comfortable size */
+    line-height: 1.6;                         /* spacing between lines */
+    color: #333;                              /* dark gray text */
+    margin: 15px 0;                           /* space between paragraphs */
+    padding: 10px;                            /* breathing room inside */
+    background-color: #f9f9f9;                /* light background highlight */
+    border-left: 4px solid #007acc;           /* accent bar on the left */
+    border-radius: 5px;                       /* smooth corners */
+}
+
+
+footer {
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
