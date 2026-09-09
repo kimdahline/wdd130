@@ -1,3 +1,4 @@
+
 main {
     max-width: 840px;
 }
@@ -20,6 +21,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 p {
@@ -59,7 +63,7 @@ img {
 }
 
 footer {
-    background-color: rgb(43, 39, 39);
+    background-color: white;
     color: #333;
     text-align: center;
     padding: 10px;
