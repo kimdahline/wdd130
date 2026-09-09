@@ -1,42 +1,68 @@
+main {
+    max-width: 840px;
+}
+
+aside {
+    width: 20rem;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+}
+
+p {
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin: 15px 0;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007acc;
+    border-radius: 5px;
+}
+
 nav {
-    background-color: darkblue;
+    background-color: black;
     padding: 10px;
 }
+
 nav a {
     color: white;
-    display:block;
-    padding:20px;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
 }
 
 h1 {
     color: darkblue;
 }
 
-img { 
-    width:150px;
-    height:auto;
-    border:1px solid black;
-    padding:2px;
+img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
     box-shadow: 0 0 30px gray;
-
 }
-
-    p {
-    font-family: Arial, Helvetica, sans-serif; /* clean readable font */
-    font-size: 16px;                          /* comfortable size */
-    line-height: 1.6;                         /* spacing between lines */
-    color: #333;                              /* dark gray text */
-    margin: 15px 0;                           /* space between paragraphs */
-    padding: 10px;                            /* breathing room inside */
-    background-color: #f9f9f9;                /* light background highlight */
-    border-left: 4px solid #007acc;           /* accent bar on the left */
-    border-radius: 5px;                       /* smooth corners */
-}
-
 
 footer {
-    background-color: darkblue;
-    color: white;
+    background-color: rgb(43, 39, 39);
+    color: #333;
     text-align: center;
     padding: 10px;
+    margin-top: 15px;
+    border-top: 1px solid #000;
 }

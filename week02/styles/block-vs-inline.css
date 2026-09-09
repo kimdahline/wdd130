@@ -9,11 +9,12 @@ body {
 }
 
 p,
-div {
-    background-color: beige;
-    margin: 1rem;
-    padding: 1rem;
+span {
+    color: navy;
+    background-color: lightblue;
+
 }
+
 
 span {
     color: navy;
