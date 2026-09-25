@@ -1,0 +1,90 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 1rem;
+}
+
+
+nav {
+    background-color: black;
+
+}
+
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav li {
+   flex: 1 1 auto;
+   justify-content: flex-end;
+}
+
+nav a {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    color:blue;
+}
+
+/* Flex Container for Cards */
+.flex-container {
+    border: 3px dashed darkcyan;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1rem;
+
+    /* Set background image here */
+    background-image: url("../images/fresh-vegetables.jpeg");
+    background-size: cover;       /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image inside the container */
+    background-repeat: no-repeat;  
+
+}
+
+.flex-item {
+    flex: 1;
+    margin: 1rem;
+    border: 5px solid rgb(0 0 0 / 20%);
+    padding: 1rem;
+    
+    /* White with 85% opacity creates a clear card over the background image */
+    background-color: rgba(255, 255, 255, 0.85); 
+    color: #111; /* Dark text for high contrast */
+    border-radius: 8px; /* Optional: smooth corners */
+}
+
+.item1 {
+    min-height: 100px;
+    /* Add background image to item1 */
+    background-image: url("../images/fresh-vegetables.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+}
+
+.item2 {
+    min-height: 200px;
+    /* add background image to item2 * /
+    background-image: url("../images/fresh-vegetables.jpeg")
+    background-size: cover;
+    background position: center
+    background-repeat: no-repeat;
+    color: black;
+
+
+}
+
+.item3 {
+    min-height: 300px;
+/* Set background image here */
+    background-image: url("../images/fresh-vegetables.jpeg");
+    background-size: cover;       /* Scales the image to cover the entire container */
+    background-position: center; /* Centers the image inside the container */
+    background-repeat: no-repeat;
+    color: black;
+
+}

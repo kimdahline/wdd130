@@ -18,151 +18,261 @@
 /* Body */
 body {
     font-family: var(--body-font);
-    color: var(--accent1-color);
+    color: var(--primary-color);
+    background-color: white;
 }
 
-/* Header */
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
+/* =========================
+   HEADER
+   ========================= */
 
-    display: flex;
+header {
+    width: 840px;
+    margin: 20px auto 0;
+
+    display: grid;
+    grid-template-columns: 150px 1fr;
     align-items: center;
-    justify-content: space-between;
+
+    background-color: var(--primary-color);
+    color: white;
 
     padding: 10px 20px;
 }
 
-header,
-main,
-footer {
+/* Logo */
+header > img {
+    width: 100px;
+    height: auto;
+
+    justify-self: center;
+}
+
+/* Navigation */
+header nav ul {
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 25px;
+
+    list-style: none;
+}
+
+header nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    padding: 10px;
+}
+
+header nav a:hover {
+    color: var(--accent2-color);
+}
+
+/* =========================
+   MAIN
+   ========================= */
+
+main {
     width: 840px;
     margin: 0 auto;
 }
 
-/* Logo */
-header img {
-    width: 120px;
-    height: auto;
-}
+/* =========================
+   HERO
+   ========================= */
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-/* Headings */
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-/* General spacing */
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-/* Hero */
 .hero {
     position: relative;
+
+    margin-top: 10px;
 }
 
-/* Hero background image */
 .hero > img {
     display: block;
+
     width: 100%;
-    height: auto;
+    height: 350px;
+
+    object-fit: cover;
 }
 
 /* Hero heading */
 .hero h1 {
     position: absolute;
+
     top: 20px;
+    left: 0;
+
     width: 100%;
 
-    padding: 16px;
+    padding: 15px;
 
     text-align: center;
 
-    opacity: 0.85;
+    background-color: rgba(255, 107, 53, 0.9);
 
-    background-color: var(--accent1-color);
-    color: #fff;
+    color: white;
 }
 
-/* Article overlay */
+/* Hero article */
 .hero article {
     position: absolute;
 
-    bottom: 30px;
+    bottom: 25px;
     left: 30px;
     right: 30px;
 
-    background-color: rgba(0, 105, 148, 0.85);
+    display: flex;
+
+    align-items: center;
+
+    background-color: rgba(0, 105, 148, 0.90);
+
     color: white;
 
     padding: 15px;
 }
 
-/* Happy client / employee image */
+/* Customer image */
 .hero article img {
-    float: right;
     width: 125px;
     height: auto;
 
     margin-left: 15px;
+
     border: 3px solid white;
+
+    order: 2;
 }
 
-/* Article paragraph */
+/* Article text */
 .hero article p {
     color: white;
+
+    margin: 0;
 }
 
-/* Sections */
+/* =========================
+   SECTIONS
+   ========================= */
+
 section {
-    margin-top: 30px;
-    padding: 20px;
-    
+    margin-top: 15px;
+
+    padding: 15px;
+
+    border: 1px solid #777;
 }
 
+/* Section headings */
 section h2 {
-    background-color: var(--secondary-color);
-    padding: 16px;
+    font-family: var(--heading-font);
+
     text-align: center;
-    margin: 0 0 16px 0;
+
+    color: var(--primary-color);
+
+    margin-bottom: 15px;
 }
 
+/* =========================
+   HISTORY
+   ========================= */
 
+.history {
+    background-color: #f7f7f7;
+}
 
-/* Footer */
+.history-content {
+    display: grid;
+
+    grid-template-columns: 1fr 200px 1fr;
+
+    gap: 25px;
+
+    align-items: center;
+}
+
+.history-content p {
+    line-height: 1.5;
+}
+
+.history-content img {
+    width: 200px;
+    height: 150px;
+
+    object-fit: cover;
+
+    justify-self: center;
+}
+
+/* =========================
+   ADVENTURES
+   ========================= */
+
+.adventures {
+    background-color: #f7f7f7;
+}
+
+.adventure-gallery {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+
+    align-items: start;
+}
+
+.adventure-gallery figure {
+    margin: 0;
+
+    text-align: center;
+}
+
+.adventure-gallery img {
+    display: block;
+
+    width: 100%;
+    height: 100px;
+
+    object-fit: cover;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
 footer {
+    width: 840px;
+
+    margin: 15px auto 0;
+
+    padding: 15px 20px;
+
     background-color: var(--primary-color);
+
     color: white;
 
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 
-    padding: 15px 20px;
+    justify-content: space-between;
+
+    align-items: center;
 }
 
 footer p {
@@ -172,8 +282,12 @@ footer p {
 /* Social media */
 .socialmedia {
     display: flex;
-    gap: 10px;
+
+    justify-content: flex-end;
+
     align-items: center;
+
+    gap: 10px;
 }
 
 .socialmedia a {
@@ -183,5 +297,6 @@ footer p {
 .socialmedia img {
     width: 40px;
     height: 40px;
+
     object-fit: contain;
 }

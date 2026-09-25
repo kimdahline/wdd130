@@ -2,40 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-main {
+
+header, .grid, footer {
     max-width: 840px;
+    margin: 0 auto;
 }
 
-aside {
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
+nav {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav a {
+    display: block;
+    color: white;
     padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
-aside img {
-    width: 200px;
-    height: auto;
-}
-
-aside h2 {
-    position: absolute;
-    top: 47px;
-    left: 150px;
-}
-main img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
-    float: right
-    
+h1 {
+    color: darkblue;
+    border-bottom: 1px solid #007acc;
 }
 
 p {
@@ -50,28 +43,52 @@ p {
     border-radius: 5px;
 }
 
-nav {
-    background-color: black;
-    padding: 10px;
-}
-
-nav a {
-    color: white;
-    display: block;
-    padding: 20px;
-    text-decoration: none;
-}
-
-h1 {
-    color: darkblue;
-}
-
 img {
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+}
+
+main img {
+    float: right;
+}
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0,0,0,1);
+    padding: 1rem;
+    background-color: #eee;
+    color: #000;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+}
+
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
+
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
+    text-align: center;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
 }
 
 footer {
@@ -82,14 +99,3 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
 }
-
-/*class selectors*/
-.box {
-    margin: 1rem;
-    border: 1px solid rgba(0,0,0,1);
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
-
-}
-

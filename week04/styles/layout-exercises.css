@@ -21,21 +21,28 @@ div {
     height: 200px;
 }
 
+/* Exercise 1 */
 .flex {
     background-color: #aba;
-    /* write declarations here */
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .grid {
     background-color: #abb;
-    /* enter declarations here */
-
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
 
+/* Exercise 2 */
 .container2 {
-    /* write declarations here */
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
 }
 
 .two {
@@ -43,14 +50,14 @@ div {
     height: 100px;
 }
 
+/* Exercise 3 */
 .container3 {
-    /* write declarations here */
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .columns-3 {
-    /* write declaration here */
-
+    grid-column: span 3;
 }
 
 .three {
