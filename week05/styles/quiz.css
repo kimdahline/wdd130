@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #000080;
+    font-size: 1.8rem;
+}
+
+header h1::before {
+    content: "☑ ";
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #eeeeee;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.quiz-item {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777777;
+    border-radius: 2px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+code {
+    display: block;
+    background-color: #333333;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    border-radius: 2px;
+}
+
+button[type="submit"] {
+    background-color: #000080;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #000066;
+}
